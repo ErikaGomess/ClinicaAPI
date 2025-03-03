@@ -1,0 +1,40 @@
+# NetBeans specific files
+nbproject/
+
+# Composer dependencies
+/vendor/
+composer.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Cache and logs
+/cache/
+/logs/
+
+# IDE specific files
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Ignore compiled files
+/node_modules/
+/public/build/
+/public/storage/
+
+# Ignore uploads (if applicable)
+/public/uploads/
+
+# PHPStorm and VSCode settings (if used)
+.idea/
+.vscode/
+
+# PHPUnit test results
+/phpunit.xml
+/phpunit.xml.dist
+/tests/_output/
+/tests/_support/_generated/
+/tests/_data/*.sqlite

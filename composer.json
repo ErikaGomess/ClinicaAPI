@@ -1,0 +1,20 @@
+{
+    "name": "vendor/clinica-a-p-i",
+    "description": "Description of project ClinicaAPI.",
+    "authors": [
+        {
+            "name": "Erika Gomes",
+            "email": "erikagomes1407@gmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "william-costa/dot-env": "v0.1.0",
+        "firebase/php-jwt": "v6.11.0",
+        "william-costa/database-manager": "v0.1.0"
+    }
+}
