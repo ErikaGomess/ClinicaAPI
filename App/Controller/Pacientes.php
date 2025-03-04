@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Model\Entity\Paciente as EntityPaciente;
 use \WilliamCosta\DatabaseManager\Pagination;
-use App\Http\Request;
 
 class Pacientes extends Api {
 
