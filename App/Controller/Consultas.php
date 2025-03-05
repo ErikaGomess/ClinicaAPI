@@ -101,7 +101,7 @@ class Consultas extends Api {
             throw new \Exception("Os campos 'nome' e 'data de nascimento' são obrigátorios", 400);
         }
 
-        $obConsulta = EntityConsulta::getPacienteById($id);
+        $obConsulta = EntityConsulta::getConsultaById($id);
 
         //VALIDA A INSTANCIA 
         if (!$obConsulta instanceof EntityConsulta) {

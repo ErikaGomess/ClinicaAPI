@@ -1,11 +1,11 @@
 <?php
 
-
 namespace App\Model\Entity;
 
 use \WilliamCosta\DatabaseManager\Database;
 
 class Prontuario {
+
     public int $id;
     public int $idPaciente;
     public int $idConsulta;
@@ -26,11 +26,11 @@ class Prontuario {
 
     public function atualizar() {
         return (new Database('prontuarios'))->update('id = ' . $this->id, [
-            'id_paciente' => $this->idPaciente,
-            'id_consulta' => $this->idConsulta,
-            'diagnostico' => $this->diagnostico,
-            'prescricao' => $this->prescricao,
-            'data_registro' => $this->registro
+                    'id_paciente' => $this->idPaciente,
+                    'id_consulta' => $this->idConsulta,
+                    'diagnostico' => $this->diagnostico,
+                    'prescricao' => $this->prescricao,
+                    'data_registro' => $this->registro
         ]);
     }
 
@@ -45,4 +45,5 @@ class Prontuario {
     public static function getProntuarios($where = null, $order = null, $limit = null, $fields = '*') {
         return (new Database('prontuarios'))->select($where, $order, $limit, $fields);
     }
+
 }
