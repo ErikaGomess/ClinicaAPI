@@ -44,7 +44,7 @@ class Usuarios extends Api {
         ];
     }
 
-    public static function getConsulta($request, $id) {
+    public static function getUsuario($request, $id) {
         if (!is_numeric($id)) {
             throw new \Exception("O id'" . $id . "' não é válido.", 400);
         }
