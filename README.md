@@ -18,7 +18,7 @@ ClínicaMed API é um sistema desenvolvido em PHP para gerenciar clínicas médi
 ## Como Executar o Projeto
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/clinica-med-api.git
+   git clone [https://github.com/ErikaGomess/ClinicaAPI.git]
    ```
 2. Configure o banco de dados (importando o schema do MySQL).
 3. Instale as dependências com Composer:
